@@ -776,6 +776,12 @@ footer a {
   font-family: "NotoKufiArabic-Medium";
   font-size: 18px;
 }
+@media (max-width: 767px) {
+  .bread {
+    padding-top: 16px;
+    font-size: 14px;
+  }
+}
 .bread a {
   color: #414141;
   text-decoration: none !important;
@@ -786,10 +792,18 @@ footer a {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   padding: 44px 0;
+  margin-bottom: 44px;
 }
 .artist_info .right_part {
   align-items: center;
   gap: 35px;
+}
+@media (max-width: 767px) {
+  .artist_info .right_part {
+    gap: 15px;
+    padding: 0 15px;
+    margin-bottom: 22px;
+  }
 }
 .artist_info .right_part img {
   max-width: 100%;
@@ -799,14 +813,37 @@ footer a {
   flex-direction: column;
   gap: 21px;
 }
+@media (max-width: 767px) {
+  .artist_info .right_part .thumbs img {
+    width: 78px;
+    height: 78px;
+    border-radius: 25px;
+  }
+}
 .artist_info .right_part .thumbs .position-relative img.play {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 767px) {
+  .artist_info .right_part .thumbs .position-relative img.play {
+    width: 30px;
+    height: 30px;
+  }
+}
 .artist_info .right_part .main_img {
   position: relative;
+}
+.artist_info .right_part .main_img img {
+  height: 600px;
+}
+@media (max-width: 767px) {
+  .artist_info .right_part .main_img img {
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+  }
 }
 .artist_info .right_part .main_img .play {
   position: absolute;
@@ -814,6 +851,18 @@ footer a {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100px;
+  height: 100px;
+}
+@media (max-width: 767px) {
+  .artist_info .right_part .main_img .play {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .artist_info .left_part {
+    padding: 0 15px;
+  }
 }
 .artist_info .left_part h2 {
   font-size: 50px;
@@ -822,19 +871,56 @@ footer a {
   font-family: "NotoKufiArabic-SemiBold";
   margin: 0;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+}
 .artist_info .left_part h6 {
   font-family: "NotoKufiArabic-Medium";
   font-size: 24px;
   color: #414141;
   line-height: 46px;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part h6 {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
 .artist_info .left_part .rate {
   gap: 12px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .artist_info .left_part .rate span {
   color: #b0b0b0;
   font-family: "NotoKufiArabic-Medium";
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .rate {
+    display: none !important;
+  }
+}
+.artist_info .left_part .rate_mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .rate_mobile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .artist_info .left_part .rate_mobile img {
+    width: 13px;
+    -webkit-margin-end: 6px;
+            margin-inline-end: 6px;
+  }
+  .artist_info .left_part .rate_mobile span {
+    font-size: 10px;
+    font-family: "NotoKufiArabic-Bold";
+  }
 }
 .artist_info .left_part .desc {
   font-size: 15px;
@@ -844,6 +930,17 @@ footer a {
   max-width: 100%;
   font-family: "NotoKufiArabic-Medium";
   margin-bottom: 24px;
+}
+.artist_info .left_part .desc span {
+  color: #ED1C24;
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .desc {
+    width: 100%;
+    font-size: 9px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
 }
 .artist_info .left_part .reply {
   gap: 11px;
@@ -872,6 +969,12 @@ footer a {
   position: relative;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part .make_choise h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
 .artist_info .left_part .make_choise h4 span {
   background-color: #f8f8f8;
   position: relative;
@@ -888,15 +991,35 @@ footer a {
   height: 1px;
   background-color: #B0B0B0;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part .make_choise h4::after {
+    top: 15px;
+  }
+}
 .artist_info .left_part .options {
   -webkit-padding-end: 40px;
           padding-inline-end: 40px;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part .options {
+    padding: 0 !important;
+  }
+}
 .artist_info .left_part .options .gift_opt {
-  padding: 18px;
+  padding: 13px 18px;
   border: 1px solid #EDEDED;
   border-radius: 25px;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .options .gift_opt {
+    padding: 10px 14px;
+  }
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .options .gift_opt .label img {
+    width: 16px;
+  }
 }
 .artist_info .left_part .options .gift_opt .label span {
   font-family: "NotoKufiArabic-Medium";
@@ -904,14 +1027,30 @@ footer a {
           margin-inline-start: 8px;
   line-height: 30px;
 }
+@media (max-width: 767px) {
+  .artist_info .left_part .options .gift_opt .label span {
+    font-size: 14px;
+  }
+}
 .artist_info .left_part .options .gift_opt p {
   font-size: 10px;
   color: #B0B0B0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .options .gift_opt p {
+    font-size: 8px;
+  }
 }
 .artist_info .left_part .options .gift_opt .price {
   direction: ltr;
   color: #414141;
   font-family: "NotoKufiArabic-Medium";
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .options .gift_opt .price {
+    font-size: 12px;
+  }
 }
 .artist_info .left_part .options .order_now {
   padding: 14px;
@@ -925,4 +1064,280 @@ footer a {
   font-family: "NotoKufiArabic-Medium";
   font-size: 24px;
   line-height: 45px;
+}
+@media (max-width: 767px) {
+  .artist_info .left_part .options .order_now {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.share {
+  background-color: #f8f8f8;
+  padding: 40px 74px;
+}
+@media (max-width: 767px) {
+  .share {
+    padding: 28px 0;
+  }
+}
+.share img {
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
+}
+@media (max-width: 767px) {
+  .share img {
+    width: 68px;
+    height: 68px;
+    -webkit-margin-end: 8px;
+            margin-inline-end: 8px;
+  }
+}
+.share h3 {
+  font-size: 35px;
+  font-family: "NotoKufiArabic-Medium";
+  line-height: 66px;
+}
+@media (max-width: 767px) {
+  .share h3 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.share p {
+  font-size: 24px;
+  line-height: 32px;
+  width: 670px;
+  max-width: 100%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .share p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .share p {
+    width: 100%;
+  }
+}
+.share p span {
+  color: #ED1C24;
+}
+
+.discover_more {
+  padding-bottom: 120px;
+}
+
+.discover_more_owl .owl-nav {
+  display: none !important;
+}
+
+.payment .right .heading img {
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
+}
+@media (max-width: 767px) {
+  .payment .right .heading img {
+    width: 60px;
+    -webkit-margin-end: 8px;
+            margin-inline-end: 8px;
+  }
+}
+.payment .right .heading h5 {
+  font-size: 24px;
+  line-height: 45px;
+  font-family: "NotoKufiArabic-Medium";
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .payment .right .heading h5 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.payment .right .heading p {
+  color: #414141;
+  font-size: 20px;
+  line-height: 39px;
+  font-family: "NotoKufiArabic-Medium";
+}
+@media (max-width: 767px) {
+  .payment .right .heading p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+.payment .right form {
+  padding: 60px 0;
+}
+@media (max-width: 767px) {
+  .payment .right form {
+    padding: 30px 0;
+  }
+}
+.payment .right form .input_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .payment .right form .input_wrapper {
+    margin-bottom: 12px;
+  }
+}
+.payment .right form .input_wrapper input,
+.payment .right form .input_wrapper textarea {
+  border: 2px solid #EDEDED;
+  border-radius: 25px;
+  padding: 22px;
+  outline: none;
+  width: 100%;
+  resize: none;
+}
+@media (max-width: 767px) {
+  .payment .right form .input_wrapper input,
+.payment .right form .input_wrapper textarea {
+    padding: 14px;
+  }
+}
+.payment .right form .input_wrapper input::-moz-placeholder, .payment .right form .input_wrapper textarea::-moz-placeholder {
+  font-family: "NotoKufiArabic-Medium";
+  color: #414141;
+}
+.payment .right form .input_wrapper input:-ms-input-placeholder, .payment .right form .input_wrapper textarea:-ms-input-placeholder {
+  font-family: "NotoKufiArabic-Medium";
+  color: #414141;
+}
+.payment .right form .input_wrapper input::placeholder,
+.payment .right form .input_wrapper textarea::placeholder {
+  font-family: "NotoKufiArabic-Medium";
+  color: #414141;
+}
+@media (max-width: 767px) {
+  .payment .right form .input_wrapper input::-moz-placeholder, .payment .right form .input_wrapper textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .payment .right form .input_wrapper input:-ms-input-placeholder, .payment .right form .input_wrapper textarea:-ms-input-placeholder {
+    font-size: 12px;
+  }
+  .payment .right form .input_wrapper input::placeholder,
+.payment .right form .input_wrapper textarea::placeholder {
+    font-size: 12px;
+  }
+}
+.payment .right form .input_wrapper textarea {
+  height: 160px;
+}
+.payment .right form .input_wrapper label {
+  font-size: 24px;
+  font-family: "NotoKufiArabic-Medium";
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .payment .right form .input_wrapper label {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+}
+.payment .right form .input_wrapper select {
+  height: auto;
+  padding: 22px;
+  border-radius: 25px;
+  border: 2px solid #ededed;
+  box-shadow: none;
+  outline: none;
+  background: #fff url(../imgs/select_arrow.png) no-repeat left 1rem center;
+}
+@media (max-width: 767px) {
+  .payment .right form .input_wrapper select {
+    padding: 14px;
+    font-size: 12px;
+  }
+}
+.payment .right form .input_wrapper button {
+  width: 100%;
+  color: #fff;
+  background-color: #ED1C24;
+  border-radius: 24px;
+  border: none;
+  padding: 22px;
+  font-size: 18px;
+}
+.payment .right form .checkbox_div {
+  flex-direction: row;
+  align-items: center;
+}
+.payment .right form .checkbox_div input {
+  width: auto;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  height: 20px;
+  width: 20px;
+}
+.payment .right form .checkbox_div label {
+  font-size: 16px;
+  margin: 0;
+}
+.payment .right form .discount {
+  margin-bottom: 40px;
+}
+.payment .right form .discount input {
+  width: 285px;
+}
+.payment .right form .discount input::-moz-placeholder {
+  color: #000;
+}
+.payment .right form .discount input:-ms-input-placeholder {
+  color: #000;
+}
+.payment .right form .discount input::placeholder {
+  color: #000;
+}
+.payment .steps {
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  padding: 50px 16px 170px;
+}
+@media (max-width: 767px) {
+  .payment .steps {
+    padding: 50px 16px 50px;
+    margin-bottom: 24px;
+  }
+}
+.payment .steps h6 {
+  font-size: 24px;
+  font-family: "NotoKufiArabic-Medium";
+  margin-bottom: 18px;
+  line-height: 45px;
+}
+.payment .steps .step {
+  display: flex;
+  margin-bottom: 20px;
+}
+.payment .steps .step span {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-margin-end: 18px;
+          margin-inline-end: 18px;
+  background-color: #7E38AD;
+  flex-shrink: 0;
+}
+.payment .steps .step p {
+  font-family: "NotoKufiArabic-Medium";
+  line-height: 30px;
+  color: #414141;
+  width: 60%;
+}
+@media (max-width: 767px) {
+  .payment .steps .step p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
